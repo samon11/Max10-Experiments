@@ -1,0 +1,20 @@
+DE10 CDROM/
+*db/
+*.sdc
+*.bak
+*.cdf
+*.done
+*.rpt
+*.summary
+*.smsg
+*.pof
+*.pin
+*.jdi
+*.sld
+*.sof
+*.qdf
+*.qsf
+*.qpf
+*.md5
+*.sfv
+*.qws
