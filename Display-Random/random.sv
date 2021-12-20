@@ -21,7 +21,7 @@ always @(posedge clk_in) begin
 	LFSR[3] <= LFSR[2] ^ feedback;
 	LFSR[4] <= LFSR[0] ^ feedback;
 	LFSR[5] <= ~(LFSR[4] & feedback);
-	LFSR[6] <= LFSR[1];
+	LFSR[6] <= ~(LFSR[1] & feedback);
 	LFSR[7] <= LFSR[5];
 end
 endmodule
