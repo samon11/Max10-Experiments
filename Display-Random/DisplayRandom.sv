@@ -46,7 +46,7 @@ logic [7:0] DSP5;
 
 clock CLOCK0(.clk_in(ADC_CLK_10), .rst(), .clk_out(CLK_OUT));
 
-// 1 >= SEED <= 256
+// SEED >= 1 and SEED <= 256
 random #(.SEED(1)) RAND0 (.clk_in(CLK_OUT), .lfsr_out(RANDINT0));
 random #(.SEED(233)) RAND1 (.clk_in(CLK_OUT), .lfsr_out(RANDINT1));
 random #(.SEED(92)) RAND2 (.clk_in(CLK_OUT), .lfsr_out(RANDINT2));
